@@ -8,6 +8,7 @@
 
 #import "DHSignInViewController.h"
 #import "DHSignUpViewController.h"
+#import "DHEndUserVoiceRecordViewController.h"
 
 @interface DHSignInViewController ()
 
@@ -49,6 +50,11 @@
 
 
 #pragma mark - Action
+
+- (IBAction)onClickSignIn:(id)sender {
+    DHEndUserVoiceRecordViewController* nextEndUserVoiceRecordVC = [[DHEndUserVoiceRecordViewController alloc] initWithNibName:@"DHEndUserVoiceRecordViewController" bundle:nil voiceIndex:1];
+    [self.navigationController pushViewController:nextEndUserVoiceRecordVC animated:YES];
+}
 
 - (IBAction)onClickSignUp:(id)sender {
     DHSignUpViewController* signUpVC = [[DHSignUpViewController alloc] init];

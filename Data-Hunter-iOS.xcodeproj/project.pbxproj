@@ -22,6 +22,13 @@
 		06C5CF0B17784AB800E217CD /* DHSignInViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 06C5CF0917784AB800E217CD /* DHSignInViewController.xib */; };
 		06C5CF0F17784B0300E217CD /* DHSignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06C5CF0D17784B0300E217CD /* DHSignUpViewController.m */; };
 		06C5CF1017784B0300E217CD /* DHSignUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 06C5CF0E17784B0300E217CD /* DHSignUpViewController.xib */; };
+		06C5CF141778684100E217CD /* DHEndUserVoiceRecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06C5CF121778684100E217CD /* DHEndUserVoiceRecordViewController.m */; };
+		06C5CF151778684100E217CD /* DHEndUserVoiceRecordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 06C5CF131778684100E217CD /* DHEndUserVoiceRecordViewController.xib */; };
+		06C5CF1917786BD900E217CD /* DHMiniGameSlotsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06C5CF1717786BD900E217CD /* DHMiniGameSlotsViewController.m */; };
+		06C5CF1A17786BD900E217CD /* DHMiniGameSlotsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 06C5CF1817786BD900E217CD /* DHMiniGameSlotsViewController.xib */; };
+		06C5CF1D177871B200E217CD /* 1.txt in Resources */ = {isa = PBXBuildFile; fileRef = 06C5CF1C177871B200E217CD /* 1.txt */; };
+		06C5CF2017787CB300E217CD /* 2.txt in Resources */ = {isa = PBXBuildFile; fileRef = 06C5CF1E17787CB300E217CD /* 2.txt */; };
+		06C5CF2117787CB300E217CD /* 3.txt in Resources */ = {isa = PBXBuildFile; fileRef = 06C5CF1F17787CB300E217CD /* 3.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +54,16 @@
 		06C5CF0C17784B0300E217CD /* DHSignUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DHSignUpViewController.h; sourceTree = "<group>"; };
 		06C5CF0D17784B0300E217CD /* DHSignUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DHSignUpViewController.m; sourceTree = "<group>"; };
 		06C5CF0E17784B0300E217CD /* DHSignUpViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DHSignUpViewController.xib; sourceTree = "<group>"; };
+		06C5CF111778684100E217CD /* DHEndUserVoiceRecordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DHEndUserVoiceRecordViewController.h; sourceTree = "<group>"; };
+		06C5CF121778684100E217CD /* DHEndUserVoiceRecordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DHEndUserVoiceRecordViewController.m; sourceTree = "<group>"; };
+		06C5CF131778684100E217CD /* DHEndUserVoiceRecordViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DHEndUserVoiceRecordViewController.xib; sourceTree = "<group>"; };
+		06C5CF1617786BD900E217CD /* DHMiniGameSlotsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DHMiniGameSlotsViewController.h; sourceTree = "<group>"; };
+		06C5CF1717786BD900E217CD /* DHMiniGameSlotsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DHMiniGameSlotsViewController.m; sourceTree = "<group>"; };
+		06C5CF1817786BD900E217CD /* DHMiniGameSlotsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DHMiniGameSlotsViewController.xib; sourceTree = "<group>"; };
+		06C5CF1B1778714300E217CD /* DHConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DHConfig.h; sourceTree = "<group>"; };
+		06C5CF1C177871B200E217CD /* 1.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 1.txt; sourceTree = "<group>"; };
+		06C5CF1E17787CB300E217CD /* 2.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 2.txt; sourceTree = "<group>"; };
+		06C5CF1F17787CB300E217CD /* 3.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 3.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +116,7 @@
 				06C5CF0217782E5200E217CD /* Account */,
 				06C5CF0117782E3600E217CD /* EndUser */,
 				06C5CF0017782DFD00E217CD /* Administrator */,
+				06C5CF1B1778714300E217CD /* DHConfig.h */,
 				06C5CEEA17782D4500E217CD /* DHAppDelegate.h */,
 				06C5CEEB17782D4500E217CD /* DHAppDelegate.m */,
 				06C5CEF317782D4500E217CD /* DHRootViewController.h */,
@@ -126,6 +144,9 @@
 		06C5CEFE17782D9E00E217CD /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				06C5CF1C177871B200E217CD /* 1.txt */,
+				06C5CF1E17787CB300E217CD /* 2.txt */,
+				06C5CF1F17787CB300E217CD /* 3.txt */,
 			);
 			name = Resource;
 			sourceTree = "<group>";
@@ -140,7 +161,12 @@
 		06C5CF0117782E3600E217CD /* EndUser */ = {
 			isa = PBXGroup;
 			children = (
-				06C5CF0317782E8400E217CD /* MiniGame */,
+				06C5CF111778684100E217CD /* DHEndUserVoiceRecordViewController.h */,
+				06C5CF121778684100E217CD /* DHEndUserVoiceRecordViewController.m */,
+				06C5CF131778684100E217CD /* DHEndUserVoiceRecordViewController.xib */,
+				06C5CF1617786BD900E217CD /* DHMiniGameSlotsViewController.h */,
+				06C5CF1717786BD900E217CD /* DHMiniGameSlotsViewController.m */,
+				06C5CF1817786BD900E217CD /* DHMiniGameSlotsViewController.xib */,
 			);
 			name = EndUser;
 			sourceTree = "<group>";
@@ -156,13 +182,6 @@
 				06C5CF0E17784B0300E217CD /* DHSignUpViewController.xib */,
 			);
 			name = Account;
-			sourceTree = "<group>";
-		};
-		06C5CF0317782E8400E217CD /* MiniGame */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = MiniGame;
 			sourceTree = "<group>";
 		};
 		06C5CF04177849FB00E217CD /* Audio */ = {
@@ -230,6 +249,11 @@
 				06C5CEF217782D4500E217CD /* Default-568h@2x.png in Resources */,
 				06C5CF0B17784AB800E217CD /* DHSignInViewController.xib in Resources */,
 				06C5CF1017784B0300E217CD /* DHSignUpViewController.xib in Resources */,
+				06C5CF151778684100E217CD /* DHEndUserVoiceRecordViewController.xib in Resources */,
+				06C5CF1A17786BD900E217CD /* DHMiniGameSlotsViewController.xib in Resources */,
+				06C5CF1D177871B200E217CD /* 1.txt in Resources */,
+				06C5CF2017787CB300E217CD /* 2.txt in Resources */,
+				06C5CF2117787CB300E217CD /* 3.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -245,6 +269,8 @@
 				06C5CEF517782D4500E217CD /* DHRootViewController.m in Sources */,
 				06C5CF0A17784AB800E217CD /* DHSignInViewController.m in Sources */,
 				06C5CF0F17784B0300E217CD /* DHSignUpViewController.m in Sources */,
+				06C5CF141778684100E217CD /* DHEndUserVoiceRecordViewController.m in Sources */,
+				06C5CF1917786BD900E217CD /* DHMiniGameSlotsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -359,6 +385,7 @@
 				06C5CEFD17782D4500E217CD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
