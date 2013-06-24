@@ -1,0 +1,346 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		06C5CEDC17782D4400E217CD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06C5CEDB17782D4400E217CD /* UIKit.framework */; };
+		06C5CEDE17782D4400E217CD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06C5CEDD17782D4400E217CD /* Foundation.framework */; };
+		06C5CEE017782D4500E217CD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06C5CEDF17782D4400E217CD /* CoreGraphics.framework */; };
+		06C5CEE617782D4500E217CD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 06C5CEE417782D4500E217CD /* InfoPlist.strings */; };
+		06C5CEE817782D4500E217CD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 06C5CEE717782D4500E217CD /* main.m */; };
+		06C5CEEC17782D4500E217CD /* DHAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 06C5CEEB17782D4500E217CD /* DHAppDelegate.m */; };
+		06C5CEEE17782D4500E217CD /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 06C5CEED17782D4500E217CD /* Default.png */; };
+		06C5CEF017782D4500E217CD /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 06C5CEEF17782D4500E217CD /* Default@2x.png */; };
+		06C5CEF217782D4500E217CD /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 06C5CEF117782D4500E217CD /* Default-568h@2x.png */; };
+		06C5CEF517782D4500E217CD /* DHViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06C5CEF417782D4500E217CD /* DHViewController.m */; };
+		06C5CEF817782D4500E217CD /* DHViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 06C5CEF617782D4500E217CD /* DHViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		06C5CED817782D4400E217CD /* Data-Hunter-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Data-Hunter-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		06C5CEDB17782D4400E217CD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		06C5CEDD17782D4400E217CD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		06C5CEDF17782D4400E217CD /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		06C5CEE317782D4500E217CD /* Data-Hunter-iOS-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Data-Hunter-iOS-Info.plist"; sourceTree = "<group>"; };
+		06C5CEE517782D4500E217CD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		06C5CEE717782D4500E217CD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		06C5CEE917782D4500E217CD /* Data-Hunter-iOS-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Data-Hunter-iOS-Prefix.pch"; sourceTree = "<group>"; };
+		06C5CEEA17782D4500E217CD /* DHAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DHAppDelegate.h; sourceTree = "<group>"; };
+		06C5CEEB17782D4500E217CD /* DHAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DHAppDelegate.m; sourceTree = "<group>"; };
+		06C5CEED17782D4500E217CD /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		06C5CEEF17782D4500E217CD /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		06C5CEF117782D4500E217CD /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		06C5CEF317782D4500E217CD /* DHViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DHViewController.h; sourceTree = "<group>"; };
+		06C5CEF417782D4500E217CD /* DHViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DHViewController.m; sourceTree = "<group>"; };
+		06C5CEF717782D4500E217CD /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/DHViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		06C5CED517782D4400E217CD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06C5CEDC17782D4400E217CD /* UIKit.framework in Frameworks */,
+				06C5CEDE17782D4400E217CD /* Foundation.framework in Frameworks */,
+				06C5CEE017782D4500E217CD /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		06C5CECF17782D4400E217CD = {
+			isa = PBXGroup;
+			children = (
+				06C5CEE117782D4500E217CD /* Data-Hunter-iOS */,
+				06C5CEDA17782D4400E217CD /* Frameworks */,
+				06C5CED917782D4400E217CD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		06C5CED917782D4400E217CD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				06C5CED817782D4400E217CD /* Data-Hunter-iOS.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		06C5CEDA17782D4400E217CD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				06C5CEDB17782D4400E217CD /* UIKit.framework */,
+				06C5CEDD17782D4400E217CD /* Foundation.framework */,
+				06C5CEDF17782D4400E217CD /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		06C5CEE117782D4500E217CD /* Data-Hunter-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				06C5CF0217782E5200E217CD /* Account */,
+				06C5CF0117782E3600E217CD /* EndUser */,
+				06C5CF0017782DFD00E217CD /* Administrator */,
+				06C5CEEA17782D4500E217CD /* DHAppDelegate.h */,
+				06C5CEEB17782D4500E217CD /* DHAppDelegate.m */,
+				06C5CEF317782D4500E217CD /* DHViewController.h */,
+				06C5CEF417782D4500E217CD /* DHViewController.m */,
+				06C5CEF617782D4500E217CD /* DHViewController.xib */,
+				06C5CEFE17782D9E00E217CD /* Resource */,
+				06C5CEE217782D4500E217CD /* Supporting Files */,
+			);
+			path = "Data-Hunter-iOS";
+			sourceTree = "<group>";
+		};
+		06C5CEE217782D4500E217CD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				06C5CEE317782D4500E217CD /* Data-Hunter-iOS-Info.plist */,
+				06C5CEE417782D4500E217CD /* InfoPlist.strings */,
+				06C5CEE717782D4500E217CD /* main.m */,
+				06C5CEE917782D4500E217CD /* Data-Hunter-iOS-Prefix.pch */,
+				06C5CEED17782D4500E217CD /* Default.png */,
+				06C5CEEF17782D4500E217CD /* Default@2x.png */,
+				06C5CEF117782D4500E217CD /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		06C5CEFE17782D9E00E217CD /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Resource;
+			sourceTree = "<group>";
+		};
+		06C5CF0017782DFD00E217CD /* Administrator */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Administrator;
+			sourceTree = "<group>";
+		};
+		06C5CF0117782E3600E217CD /* EndUser */ = {
+			isa = PBXGroup;
+			children = (
+				06C5CF0317782E8400E217CD /* MiniGame */,
+			);
+			name = EndUser;
+			sourceTree = "<group>";
+		};
+		06C5CF0217782E5200E217CD /* Account */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Account;
+			sourceTree = "<group>";
+		};
+		06C5CF0317782E8400E217CD /* MiniGame */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = MiniGame;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		06C5CED717782D4400E217CD /* Data-Hunter-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 06C5CEFB17782D4500E217CD /* Build configuration list for PBXNativeTarget "Data-Hunter-iOS" */;
+			buildPhases = (
+				06C5CED417782D4400E217CD /* Sources */,
+				06C5CED517782D4400E217CD /* Frameworks */,
+				06C5CED617782D4400E217CD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Data-Hunter-iOS";
+			productName = "Data-Hunter-iOS";
+			productReference = 06C5CED817782D4400E217CD /* Data-Hunter-iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		06C5CED017782D4400E217CD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = DH;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = liulishuo;
+			};
+			buildConfigurationList = 06C5CED317782D4400E217CD /* Build configuration list for PBXProject "Data-Hunter-iOS" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 06C5CECF17782D4400E217CD;
+			productRefGroup = 06C5CED917782D4400E217CD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				06C5CED717782D4400E217CD /* Data-Hunter-iOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		06C5CED617782D4400E217CD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06C5CEE617782D4500E217CD /* InfoPlist.strings in Resources */,
+				06C5CEEE17782D4500E217CD /* Default.png in Resources */,
+				06C5CEF017782D4500E217CD /* Default@2x.png in Resources */,
+				06C5CEF217782D4500E217CD /* Default-568h@2x.png in Resources */,
+				06C5CEF817782D4500E217CD /* DHViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		06C5CED417782D4400E217CD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06C5CEE817782D4500E217CD /* main.m in Sources */,
+				06C5CEEC17782D4500E217CD /* DHAppDelegate.m in Sources */,
+				06C5CEF517782D4500E217CD /* DHViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		06C5CEE417782D4500E217CD /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				06C5CEE517782D4500E217CD /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		06C5CEF617782D4500E217CD /* DHViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				06C5CEF717782D4500E217CD /* en */,
+			);
+			name = DHViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		06C5CEF917782D4500E217CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		06C5CEFA17782D4500E217CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		06C5CEFC17782D4500E217CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Data-Hunter-iOS/Data-Hunter-iOS-Prefix.pch";
+				INFOPLIST_FILE = "Data-Hunter-iOS/Data-Hunter-iOS-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		06C5CEFD17782D4500E217CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Data-Hunter-iOS/Data-Hunter-iOS-Prefix.pch";
+				INFOPLIST_FILE = "Data-Hunter-iOS/Data-Hunter-iOS-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		06C5CED317782D4400E217CD /* Build configuration list for PBXProject "Data-Hunter-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				06C5CEF917782D4500E217CD /* Debug */,
+				06C5CEFA17782D4500E217CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		06C5CEFB17782D4500E217CD /* Build configuration list for PBXNativeTarget "Data-Hunter-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				06C5CEFC17782D4500E217CD /* Debug */,
+				06C5CEFD17782D4500E217CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 06C5CED017782D4400E217CD /* Project object */;
+}
