@@ -8,12 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-@class DHViewController;
+@class DHRootViewController;
 
 @interface DHAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 
-@property (strong, nonatomic) DHViewController *viewController;
+@property (strong, nonatomic) DHRootViewController *rootViewController;
 
 @end

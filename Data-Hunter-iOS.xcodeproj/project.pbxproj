@@ -16,8 +16,12 @@
 		06C5CEEE17782D4500E217CD /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 06C5CEED17782D4500E217CD /* Default.png */; };
 		06C5CEF017782D4500E217CD /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 06C5CEEF17782D4500E217CD /* Default@2x.png */; };
 		06C5CEF217782D4500E217CD /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 06C5CEF117782D4500E217CD /* Default-568h@2x.png */; };
-		06C5CEF517782D4500E217CD /* DHViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06C5CEF417782D4500E217CD /* DHViewController.m */; };
-		06C5CEF817782D4500E217CD /* DHViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 06C5CEF617782D4500E217CD /* DHViewController.xib */; };
+		06C5CEF517782D4500E217CD /* DHRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06C5CEF417782D4500E217CD /* DHRootViewController.m */; };
+		06C5CF0617784A2300E217CD /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06C5CF0517784A2300E217CD /* AVFoundation.framework */; };
+		06C5CF0A17784AB800E217CD /* DHSignInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06C5CF0817784AB800E217CD /* DHSignInViewController.m */; };
+		06C5CF0B17784AB800E217CD /* DHSignInViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 06C5CF0917784AB800E217CD /* DHSignInViewController.xib */; };
+		06C5CF0F17784B0300E217CD /* DHSignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06C5CF0D17784B0300E217CD /* DHSignUpViewController.m */; };
+		06C5CF1017784B0300E217CD /* DHSignUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 06C5CF0E17784B0300E217CD /* DHSignUpViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,9 +38,15 @@
 		06C5CEED17782D4500E217CD /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		06C5CEEF17782D4500E217CD /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		06C5CEF117782D4500E217CD /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		06C5CEF317782D4500E217CD /* DHViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DHViewController.h; sourceTree = "<group>"; };
-		06C5CEF417782D4500E217CD /* DHViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DHViewController.m; sourceTree = "<group>"; };
-		06C5CEF717782D4500E217CD /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/DHViewController.xib; sourceTree = "<group>"; };
+		06C5CEF317782D4500E217CD /* DHRootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DHRootViewController.h; sourceTree = "<group>"; };
+		06C5CEF417782D4500E217CD /* DHRootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DHRootViewController.m; sourceTree = "<group>"; };
+		06C5CF0517784A2300E217CD /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		06C5CF0717784AB800E217CD /* DHSignInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DHSignInViewController.h; sourceTree = "<group>"; };
+		06C5CF0817784AB800E217CD /* DHSignInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DHSignInViewController.m; sourceTree = "<group>"; };
+		06C5CF0917784AB800E217CD /* DHSignInViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DHSignInViewController.xib; sourceTree = "<group>"; };
+		06C5CF0C17784B0300E217CD /* DHSignUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DHSignUpViewController.h; sourceTree = "<group>"; };
+		06C5CF0D17784B0300E217CD /* DHSignUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DHSignUpViewController.m; sourceTree = "<group>"; };
+		06C5CF0E17784B0300E217CD /* DHSignUpViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DHSignUpViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				06C5CF0617784A2300E217CD /* AVFoundation.framework in Frameworks */,
 				06C5CEDC17782D4400E217CD /* UIKit.framework in Frameworks */,
 				06C5CEDE17782D4400E217CD /* Foundation.framework in Frameworks */,
 				06C5CEE017782D4500E217CD /* CoreGraphics.framework in Frameworks */,
@@ -73,6 +84,7 @@
 		06C5CEDA17782D4400E217CD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				06C5CF0517784A2300E217CD /* AVFoundation.framework */,
 				06C5CEDB17782D4400E217CD /* UIKit.framework */,
 				06C5CEDD17782D4400E217CD /* Foundation.framework */,
 				06C5CEDF17782D4400E217CD /* CoreGraphics.framework */,
@@ -83,14 +95,14 @@
 		06C5CEE117782D4500E217CD /* Data-Hunter-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				06C5CF04177849FB00E217CD /* Audio */,
 				06C5CF0217782E5200E217CD /* Account */,
 				06C5CF0117782E3600E217CD /* EndUser */,
 				06C5CF0017782DFD00E217CD /* Administrator */,
 				06C5CEEA17782D4500E217CD /* DHAppDelegate.h */,
 				06C5CEEB17782D4500E217CD /* DHAppDelegate.m */,
-				06C5CEF317782D4500E217CD /* DHViewController.h */,
-				06C5CEF417782D4500E217CD /* DHViewController.m */,
-				06C5CEF617782D4500E217CD /* DHViewController.xib */,
+				06C5CEF317782D4500E217CD /* DHRootViewController.h */,
+				06C5CEF417782D4500E217CD /* DHRootViewController.m */,
 				06C5CEFE17782D9E00E217CD /* Resource */,
 				06C5CEE217782D4500E217CD /* Supporting Files */,
 			);
@@ -136,6 +148,12 @@
 		06C5CF0217782E5200E217CD /* Account */ = {
 			isa = PBXGroup;
 			children = (
+				06C5CF0717784AB800E217CD /* DHSignInViewController.h */,
+				06C5CF0817784AB800E217CD /* DHSignInViewController.m */,
+				06C5CF0917784AB800E217CD /* DHSignInViewController.xib */,
+				06C5CF0C17784B0300E217CD /* DHSignUpViewController.h */,
+				06C5CF0D17784B0300E217CD /* DHSignUpViewController.m */,
+				06C5CF0E17784B0300E217CD /* DHSignUpViewController.xib */,
 			);
 			name = Account;
 			sourceTree = "<group>";
@@ -145,6 +163,13 @@
 			children = (
 			);
 			name = MiniGame;
+			sourceTree = "<group>";
+		};
+		06C5CF04177849FB00E217CD /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Audio;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -203,7 +228,8 @@
 				06C5CEEE17782D4500E217CD /* Default.png in Resources */,
 				06C5CEF017782D4500E217CD /* Default@2x.png in Resources */,
 				06C5CEF217782D4500E217CD /* Default-568h@2x.png in Resources */,
-				06C5CEF817782D4500E217CD /* DHViewController.xib in Resources */,
+				06C5CF0B17784AB800E217CD /* DHSignInViewController.xib in Resources */,
+				06C5CF1017784B0300E217CD /* DHSignUpViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,7 +242,9 @@
 			files = (
 				06C5CEE817782D4500E217CD /* main.m in Sources */,
 				06C5CEEC17782D4500E217CD /* DHAppDelegate.m in Sources */,
-				06C5CEF517782D4500E217CD /* DHViewController.m in Sources */,
+				06C5CEF517782D4500E217CD /* DHRootViewController.m in Sources */,
+				06C5CF0A17784AB800E217CD /* DHSignInViewController.m in Sources */,
+				06C5CF0F17784B0300E217CD /* DHSignUpViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -229,14 +257,6 @@
 				06C5CEE517782D4500E217CD /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		06C5CEF617782D4500E217CD /* DHViewController.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				06C5CEF717782D4500E217CD /* en */,
-			);
-			name = DHViewController.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -267,7 +287,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -291,7 +311,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
