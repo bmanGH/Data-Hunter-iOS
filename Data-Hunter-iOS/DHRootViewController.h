@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface DHViewController : UIViewController
+@interface DHRootViewController : UINavigationController
 
 @end

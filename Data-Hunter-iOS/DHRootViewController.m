@@ -6,13 +6,21 @@
 //  Copyright (c) 2013 liulishuo. All rights reserved.
 //
 
-#import "DHViewController.h"
+#import "DHRootViewController.h"
 
-@interface DHViewController ()
+@interface DHRootViewController ()
 
 @end
 
-@implementation DHViewController
+@implementation DHRootViewController
+
+- (id) initWithRootViewController:(UIViewController *)rootViewController {
+    if (self = [super initWithRootViewController:rootViewController]) {
+        [self setNavigationBarHidden:YES animated:NO];
+        return self;
+    }
+    return nil;
+}
 
 - (void)viewDidLoad
 {
