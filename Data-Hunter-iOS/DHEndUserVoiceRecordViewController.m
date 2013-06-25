@@ -7,10 +7,14 @@
 //
 
 #import "DHEndUserVoiceRecordViewController.h"
+#import "DHUserModel.h"
+#import "DHTextModel.h"
+#import "DHVoiceModel.h"
+
 
 @interface DHEndUserVoiceRecordViewController ()
 
-@property (nonatomic, readwrite, assign) NSInteger voiceIndex;
+@property (nonatomic, readwrite, strong) DHTextModel* currentTextModel;
 @property (nonatomic, readwrite, strong) AVAudioRecorder* voiceRecorder;
 @property (nonatomic, readwrite, strong) AVAudioPlayer* voicePlayer;
 
@@ -19,17 +23,19 @@
 
 @implementation DHEndUserVoiceRecordViewController
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil voiceIndex:(NSInteger)voiceIndex
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        self.voiceIndex = voiceIndex;
+        self.currentTextModel = [[DHUserModel currentUserModel] fetchRandomTextModelWithoutRecordedVoice];
         
         // Set the audio file
         NSArray *pathComponents = @[[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,
                                                                          NSUserDomainMask, YES)
                                      lastObject],
-                                    [NSString stringWithFormat:@"%d.m4a", voiceIndex]];
+                                    [NSString stringWithFormat:@"%@____%@.m4a",
+                                     [DHUserModel currentUserModel].indexID,
+                                     self.currentTextModel.indexID]];
         NSURL *outputFileURL = [NSURL fileURLWithPathComponents:pathComponents];
         
         // Setup audio session
@@ -56,17 +62,15 @@
 {
     [super viewDidLoad];
     
-    NSString* textContentPath = [[NSBundle mainBundle] pathForResource:[NSString stringWithFormat:@"%d", self.voiceIndex] ofType:@"txt"];
-    NSString* textContent = [NSString stringWithContentsOfFile:textContentPath encoding:NSUTF8StringEncoding error:nil];
-    [self.voiceText setText:textContent];
+    [self.voiceText setText:self.currentTextModel.text];
     
     [self.playButton setEnabled:NO];
-}
-
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    
+    // 进度
+    NSInteger numerator = [DHUserModel currentUserModel].ownerVoiceModels.count;
+    NSInteger denominator = [DHTextModel allObject].count;
+    [self.progressBar setProgress:(float)numerator / denominator];
+    [self.progressLabel setText:[NSString stringWithFormat:@"Progress %d / %d", numerator, denominator]];
 }
 
 
@@ -81,6 +85,7 @@
         
         [self.recordButton setTitle:@"Record" forState:UIControlStateNormal];
         [self.playButton setEnabled:YES];
+        [self.nextButton setEnabled:YES];
     }
     else { // start record
         AVAudioSession *session = [AVAudioSession sharedInstance];
@@ -120,8 +125,43 @@
 }
 
 - (IBAction)onClickNext:(id)sender {
-    DHEndUserVoiceRecordViewController* nextEndUserVoiceRecordVC = [[DHEndUserVoiceRecordViewController alloc] initWithNibName:@"DHEndUserVoiceRecordViewController" bundle:nil voiceIndex:self.voiceIndex + 1];
-    [self.navigationController pushViewController:nextEndUserVoiceRecordVC animated:YES];
+    DHVoiceModel* newVoiceModel = [[DHVoiceModel alloc] init];
+    newVoiceModel.referenceTextModelIndexID = self.currentTextModel.indexID;
+    newVoiceModel.ownerUserModelIndexID = [DHUserModel currentUserModel].indexID;
+    newVoiceModel.dataFileURL = self.voiceRecorder.url;
+    
+    if ([newVoiceModel upload]) {
+        NSInteger numerator = [DHUserModel currentUserModel].ownerVoiceModels.count;
+        NSInteger denominator = [DHTextModel allObject].count;
+        if (numerator < denominator) {
+            DHEndUserVoiceRecordViewController* nextEndUserVoiceRecordVC = [[DHEndUserVoiceRecordViewController alloc] initWithNibName:@"DHEndUserVoiceRecordViewController" bundle:nil];
+            UIViewController* rootVC = self.navigationController.viewControllers[0];
+            [self.navigationController setViewControllers:@[rootVC, nextEndUserVoiceRecordVC]
+                                                 animated:YES];
+        }
+        else {
+            UIAlertView* alert = [[UIAlertView alloc] initWithTitle:@"Warning"
+                                                            message:@"Thanks for recording"
+                                                           delegate:self
+                                                  cancelButtonTitle:@"OK"
+                                                  otherButtonTitles:nil];
+            [alert show];
+            
+            [self.progressBar setProgress:(float)numerator / denominator];
+            [self.progressLabel setText:[NSString stringWithFormat:@"Progress %d / %d", numerator, denominator]];
+        }
+    }
+}
+
+
+#pragma mark - UIAlertViewDelegate
+
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
+    // 如果录制完所有语言则跳回登陆界面
+    NSInteger numerator = [DHUserModel currentUserModel].ownerVoiceModels.count;
+    NSInteger denominator = [DHTextModel allObject].count;
+    if (numerator >= denominator)
+        [self.navigationController popToRootViewControllerAnimated:YES];
 }
 
 

@@ -10,18 +10,17 @@
 #import <AVFoundation/AVFoundation.h>
 
 
-@interface DHEndUserVoiceRecordViewController : UIViewController <AVAudioRecorderDelegate, AVAudioPlayerDelegate>
+@interface DHEndUserVoiceRecordViewController : UIViewController <AVAudioRecorderDelegate, AVAudioPlayerDelegate, UIAlertViewDelegate>
 
 @property (weak, nonatomic) IBOutlet UITextView *voiceText;
 @property (weak, nonatomic) IBOutlet UIButton *recordButton;
 @property (weak, nonatomic) IBOutlet UIButton *playButton;
+@property (weak, nonatomic) IBOutlet UIButton *nextButton;
 @property (weak, nonatomic) IBOutlet UIProgressView *progressBar;
 @property (weak, nonatomic) IBOutlet UILabel *progressLabel;
 
 - (IBAction)onClickRecord:(id)sender;
 - (IBAction)onClickPlay:(id)sender;
 - (IBAction)onClickNext:(id)sender;
-
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil voiceIndex:(NSInteger)voiceIndex;
 
 @end

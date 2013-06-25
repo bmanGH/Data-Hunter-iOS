@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		068EB15717794FCD00A34F9A /* Data-Hunter-iOS_juzi.txt in Resources */ = {isa = PBXBuildFile; fileRef = 068EB15617794FCD00A34F9A /* Data-Hunter-iOS_juzi.txt */; };
+		068EB15A177952F000A34F9A /* DHUserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 068EB159177952F000A34F9A /* DHUserModel.m */; };
+		068EB15D177952FF00A34F9A /* DHTextModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 068EB15C177952FF00A34F9A /* DHTextModel.m */; };
+		068EB1601779530A00A34F9A /* DHVoiceModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 068EB15F1779530A00A34F9A /* DHVoiceModel.m */; };
+		068EB1631779580400A34F9A /* DHObjectModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 068EB1621779580400A34F9A /* DHObjectModel.m */; };
+		068EB1A4177979E500A34F9A /* Underscore+Functional.m in Sources */ = {isa = PBXBuildFile; fileRef = 068EB199177979E500A34F9A /* Underscore+Functional.m */; };
+		068EB1A5177979E500A34F9A /* Underscore.m in Sources */ = {isa = PBXBuildFile; fileRef = 068EB19C177979E500A34F9A /* Underscore.m */; };
+		068EB1A6177979E500A34F9A /* USArrayWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 068EB19E177979E500A34F9A /* USArrayWrapper.m */; };
+		068EB1A7177979E500A34F9A /* USDictionaryWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 068EB1A1177979E500A34F9A /* USDictionaryWrapper.m */; };
 		06C5CEDC17782D4400E217CD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06C5CEDB17782D4400E217CD /* UIKit.framework */; };
 		06C5CEDE17782D4400E217CD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06C5CEDD17782D4400E217CD /* Foundation.framework */; };
 		06C5CEE017782D4500E217CD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06C5CEDF17782D4400E217CD /* CoreGraphics.framework */; };
@@ -26,12 +35,28 @@
 		06C5CF151778684100E217CD /* DHEndUserVoiceRecordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 06C5CF131778684100E217CD /* DHEndUserVoiceRecordViewController.xib */; };
 		06C5CF1917786BD900E217CD /* DHMiniGameSlotsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06C5CF1717786BD900E217CD /* DHMiniGameSlotsViewController.m */; };
 		06C5CF1A17786BD900E217CD /* DHMiniGameSlotsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 06C5CF1817786BD900E217CD /* DHMiniGameSlotsViewController.xib */; };
-		06C5CF1D177871B200E217CD /* 1.txt in Resources */ = {isa = PBXBuildFile; fileRef = 06C5CF1C177871B200E217CD /* 1.txt */; };
-		06C5CF2017787CB300E217CD /* 2.txt in Resources */ = {isa = PBXBuildFile; fileRef = 06C5CF1E17787CB300E217CD /* 2.txt */; };
-		06C5CF2117787CB300E217CD /* 3.txt in Resources */ = {isa = PBXBuildFile; fileRef = 06C5CF1F17787CB300E217CD /* 3.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		068EB15617794FCD00A34F9A /* Data-Hunter-iOS_juzi.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Data-Hunter-iOS_juzi.txt"; sourceTree = "<group>"; };
+		068EB158177952F000A34F9A /* DHUserModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DHUserModel.h; sourceTree = "<group>"; };
+		068EB159177952F000A34F9A /* DHUserModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DHUserModel.m; sourceTree = "<group>"; };
+		068EB15B177952FF00A34F9A /* DHTextModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DHTextModel.h; sourceTree = "<group>"; };
+		068EB15C177952FF00A34F9A /* DHTextModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DHTextModel.m; sourceTree = "<group>"; };
+		068EB15E1779530A00A34F9A /* DHVoiceModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DHVoiceModel.h; sourceTree = "<group>"; };
+		068EB15F1779530A00A34F9A /* DHVoiceModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DHVoiceModel.m; sourceTree = "<group>"; };
+		068EB1611779580400A34F9A /* DHObjectModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DHObjectModel.h; sourceTree = "<group>"; };
+		068EB1621779580400A34F9A /* DHObjectModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DHObjectModel.m; sourceTree = "<group>"; };
+		068EB198177979E500A34F9A /* Underscore+Functional.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Underscore+Functional.h"; sourceTree = "<group>"; };
+		068EB199177979E500A34F9A /* Underscore+Functional.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Underscore+Functional.m"; sourceTree = "<group>"; };
+		068EB19A177979E500A34F9A /* Underscore-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Underscore-Prefix.pch"; sourceTree = "<group>"; };
+		068EB19B177979E500A34F9A /* Underscore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Underscore.h; sourceTree = "<group>"; };
+		068EB19C177979E500A34F9A /* Underscore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Underscore.m; sourceTree = "<group>"; };
+		068EB19D177979E500A34F9A /* USArrayWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = USArrayWrapper.h; sourceTree = "<group>"; };
+		068EB19E177979E500A34F9A /* USArrayWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = USArrayWrapper.m; sourceTree = "<group>"; };
+		068EB19F177979E500A34F9A /* USConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = USConstants.h; sourceTree = "<group>"; };
+		068EB1A0177979E500A34F9A /* USDictionaryWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = USDictionaryWrapper.h; sourceTree = "<group>"; };
+		068EB1A1177979E500A34F9A /* USDictionaryWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = USDictionaryWrapper.m; sourceTree = "<group>"; };
 		06C5CED817782D4400E217CD /* Data-Hunter-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Data-Hunter-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		06C5CEDB17782D4400E217CD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		06C5CEDD17782D4400E217CD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -61,9 +86,6 @@
 		06C5CF1717786BD900E217CD /* DHMiniGameSlotsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DHMiniGameSlotsViewController.m; sourceTree = "<group>"; };
 		06C5CF1817786BD900E217CD /* DHMiniGameSlotsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DHMiniGameSlotsViewController.xib; sourceTree = "<group>"; };
 		06C5CF1B1778714300E217CD /* DHConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DHConfig.h; sourceTree = "<group>"; };
-		06C5CF1C177871B200E217CD /* 1.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 1.txt; sourceTree = "<group>"; };
-		06C5CF1E17787CB300E217CD /* 2.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 2.txt; sourceTree = "<group>"; };
-		06C5CF1F17787CB300E217CD /* 3.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 3.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,10 +103,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		068EB1641779799700A34F9A /* Libs */ = {
+			isa = PBXGroup;
+			children = (
+				068EB195177979E500A34F9A /* Underscore */,
+			);
+			name = Libs;
+			sourceTree = "<group>";
+		};
+		068EB195177979E500A34F9A /* Underscore */ = {
+			isa = PBXGroup;
+			children = (
+				068EB198177979E500A34F9A /* Underscore+Functional.h */,
+				068EB199177979E500A34F9A /* Underscore+Functional.m */,
+				068EB19A177979E500A34F9A /* Underscore-Prefix.pch */,
+				068EB19B177979E500A34F9A /* Underscore.h */,
+				068EB19C177979E500A34F9A /* Underscore.m */,
+				068EB19D177979E500A34F9A /* USArrayWrapper.h */,
+				068EB19E177979E500A34F9A /* USArrayWrapper.m */,
+				068EB19F177979E500A34F9A /* USConstants.h */,
+				068EB1A0177979E500A34F9A /* USDictionaryWrapper.h */,
+				068EB1A1177979E500A34F9A /* USDictionaryWrapper.m */,
+			);
+			name = Underscore;
+			path = "Data-Hunter-iOS/Underscore";
+			sourceTree = "<group>";
+		};
 		06C5CECF17782D4400E217CD = {
 			isa = PBXGroup;
 			children = (
 				06C5CEE117782D4500E217CD /* Data-Hunter-iOS */,
+				068EB1641779799700A34F9A /* Libs */,
 				06C5CEDA17782D4400E217CD /* Frameworks */,
 				06C5CED917782D4400E217CD /* Products */,
 			);
@@ -112,7 +161,7 @@
 		06C5CEE117782D4500E217CD /* Data-Hunter-iOS */ = {
 			isa = PBXGroup;
 			children = (
-				06C5CF04177849FB00E217CD /* Audio */,
+				06C5CF04177849FB00E217CD /* Model */,
 				06C5CF0217782E5200E217CD /* Account */,
 				06C5CF0117782E3600E217CD /* EndUser */,
 				06C5CF0017782DFD00E217CD /* Administrator */,
@@ -144,9 +193,7 @@
 		06C5CEFE17782D9E00E217CD /* Resource */ = {
 			isa = PBXGroup;
 			children = (
-				06C5CF1C177871B200E217CD /* 1.txt */,
-				06C5CF1E17787CB300E217CD /* 2.txt */,
-				06C5CF1F17787CB300E217CD /* 3.txt */,
+				068EB15617794FCD00A34F9A /* Data-Hunter-iOS_juzi.txt */,
 			);
 			name = Resource;
 			sourceTree = "<group>";
@@ -184,11 +231,19 @@
 			name = Account;
 			sourceTree = "<group>";
 		};
-		06C5CF04177849FB00E217CD /* Audio */ = {
+		06C5CF04177849FB00E217CD /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				068EB1611779580400A34F9A /* DHObjectModel.h */,
+				068EB1621779580400A34F9A /* DHObjectModel.m */,
+				068EB158177952F000A34F9A /* DHUserModel.h */,
+				068EB159177952F000A34F9A /* DHUserModel.m */,
+				068EB15B177952FF00A34F9A /* DHTextModel.h */,
+				068EB15C177952FF00A34F9A /* DHTextModel.m */,
+				068EB15E1779530A00A34F9A /* DHVoiceModel.h */,
+				068EB15F1779530A00A34F9A /* DHVoiceModel.m */,
 			);
-			name = Audio;
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -251,9 +306,7 @@
 				06C5CF1017784B0300E217CD /* DHSignUpViewController.xib in Resources */,
 				06C5CF151778684100E217CD /* DHEndUserVoiceRecordViewController.xib in Resources */,
 				06C5CF1A17786BD900E217CD /* DHMiniGameSlotsViewController.xib in Resources */,
-				06C5CF1D177871B200E217CD /* 1.txt in Resources */,
-				06C5CF2017787CB300E217CD /* 2.txt in Resources */,
-				06C5CF2117787CB300E217CD /* 3.txt in Resources */,
+				068EB15717794FCD00A34F9A /* Data-Hunter-iOS_juzi.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,6 +324,14 @@
 				06C5CF0F17784B0300E217CD /* DHSignUpViewController.m in Sources */,
 				06C5CF141778684100E217CD /* DHEndUserVoiceRecordViewController.m in Sources */,
 				06C5CF1917786BD900E217CD /* DHMiniGameSlotsViewController.m in Sources */,
+				068EB15A177952F000A34F9A /* DHUserModel.m in Sources */,
+				068EB15D177952FF00A34F9A /* DHTextModel.m in Sources */,
+				068EB1601779530A00A34F9A /* DHVoiceModel.m in Sources */,
+				068EB1631779580400A34F9A /* DHObjectModel.m in Sources */,
+				068EB1A4177979E500A34F9A /* Underscore+Functional.m in Sources */,
+				068EB1A5177979E500A34F9A /* Underscore.m in Sources */,
+				068EB1A6177979E500A34F9A /* USArrayWrapper.m in Sources */,
+				068EB1A7177979E500A34F9A /* USDictionaryWrapper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -350,7 +411,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Data-Hunter-iOS/Data-Hunter-iOS-Prefix.pch";
 				INFOPLIST_FILE = "Data-Hunter-iOS/Data-Hunter-iOS-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -361,7 +424,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Data-Hunter-iOS/Data-Hunter-iOS-Prefix.pch";
 				INFOPLIST_FILE = "Data-Hunter-iOS/Data-Hunter-iOS-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

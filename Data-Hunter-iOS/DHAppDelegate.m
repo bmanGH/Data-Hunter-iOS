@@ -10,11 +10,21 @@
 #import "DHRootViewController.h"
 #import "DHSignInViewController.h"
 
+#import "DHUserModel.h"
+#import "DHTextModel.h"
+#import "DHVoiceModel.h"
+
 
 @implementation DHAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    srand(time(0));
+    
+    [DHUserModel restoreDataBase];
+    [DHTextModel restoreDataBase];
+    [DHVoiceModel restoreDataBase];
+    
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     DHSignInViewController* signInVC = [[DHSignInViewController alloc] init];
     self.rootViewController = [[DHRootViewController alloc] initWithRootViewController:signInVC];
@@ -33,6 +43,9 @@
 {
     // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later. 
     // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+    
+    [DHUserModel storeDataBase];
+    [DHVoiceModel storeDataBase];
 }
 
 - (void)applicationWillEnterForeground:(UIApplication *)application
