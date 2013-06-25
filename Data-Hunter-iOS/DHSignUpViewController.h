@@ -14,6 +14,7 @@
 @property (weak, nonatomic) IBOutlet UITextField *userPasswordTextField;
 @property (weak, nonatomic) IBOutlet UITextField *userPasswordTextFieldAgain;
 @property (weak, nonatomic) IBOutlet UITextField *userLocationTextField;
+@property (weak, nonatomic) IBOutlet UISegmentedControl *genderSegmented;
 
 - (IBAction)onClickSignUp:(id)sender;
 - (IBAction)onClickCancel:(id)sender;
