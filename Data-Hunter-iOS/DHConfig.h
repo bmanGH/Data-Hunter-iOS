@@ -10,6 +10,6 @@
 #define Data_Hunter_iOS_DHConfig_h
 
 // 每多少个进度就进入一下游戏界面
-#define kDHHowManyProgressBeforeMiniGame        (2)
+#define kDHHowManyProgressBeforeMiniGame        (10)
 
 #endif

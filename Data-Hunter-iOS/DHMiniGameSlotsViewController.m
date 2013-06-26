@@ -140,7 +140,7 @@
 - (IBAction)onClickPush:(UIButton *)sender {
     switch (_state) {
         case kDHMiniGamePushState: {
-            self.timer = [NSTimer scheduledTimerWithTimeInterval:0.5 target:self selector:@selector(onTimer) userInfo:nil repeats:YES];
+            self.timer = [NSTimer scheduledTimerWithTimeInterval:0.1 target:self selector:@selector(onTimer) userInfo:nil repeats:YES];
             
             [self.pushButton setTitle:@"Stop" forState:UIControlStateNormal];
             [self.exitButton setEnabled:NO];
