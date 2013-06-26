@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		063A67E0177AB0DE00C57DD7 /* slots_6.png in Resources */ = {isa = PBXBuildFile; fileRef = 063A67DA177AB0DE00C57DD7 /* slots_6.png */; };
+		063A67E1177AB0DE00C57DD7 /* slots_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 063A67DB177AB0DE00C57DD7 /* slots_2.png */; };
+		063A67E2177AB0DE00C57DD7 /* slots_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 063A67DC177AB0DE00C57DD7 /* slots_1.png */; };
+		063A67E3177AB0DE00C57DD7 /* slots_4.png in Resources */ = {isa = PBXBuildFile; fileRef = 063A67DD177AB0DE00C57DD7 /* slots_4.png */; };
+		063A67E4177AB0DE00C57DD7 /* slots_3.png in Resources */ = {isa = PBXBuildFile; fileRef = 063A67DE177AB0DE00C57DD7 /* slots_3.png */; };
+		063A67E5177AB0DE00C57DD7 /* slots_5.png in Resources */ = {isa = PBXBuildFile; fileRef = 063A67DF177AB0DE00C57DD7 /* slots_5.png */; };
+		063A67E8177AE50800C57DD7 /* push.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 063A67E6177AE50800C57DD7 /* push.mp3 */; };
+		063A67E9177AE50800C57DD7 /* win.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 063A67E7177AE50800C57DD7 /* win.mp3 */; };
 		068EB15717794FCD00A34F9A /* Data-Hunter-iOS_juzi.txt in Resources */ = {isa = PBXBuildFile; fileRef = 068EB15617794FCD00A34F9A /* Data-Hunter-iOS_juzi.txt */; };
 		068EB15A177952F000A34F9A /* DHUserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 068EB159177952F000A34F9A /* DHUserModel.m */; };
 		068EB15D177952FF00A34F9A /* DHTextModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 068EB15C177952FF00A34F9A /* DHTextModel.m */; };
@@ -38,6 +46,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		063A67DA177AB0DE00C57DD7 /* slots_6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = slots_6.png; sourceTree = "<group>"; };
+		063A67DB177AB0DE00C57DD7 /* slots_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = slots_2.png; sourceTree = "<group>"; };
+		063A67DC177AB0DE00C57DD7 /* slots_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = slots_1.png; sourceTree = "<group>"; };
+		063A67DD177AB0DE00C57DD7 /* slots_4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = slots_4.png; sourceTree = "<group>"; };
+		063A67DE177AB0DE00C57DD7 /* slots_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = slots_3.png; sourceTree = "<group>"; };
+		063A67DF177AB0DE00C57DD7 /* slots_5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = slots_5.png; sourceTree = "<group>"; };
+		063A67E6177AE50800C57DD7 /* push.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = push.mp3; sourceTree = "<group>"; };
+		063A67E7177AE50800C57DD7 /* win.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = win.mp3; sourceTree = "<group>"; };
 		068EB15617794FCD00A34F9A /* Data-Hunter-iOS_juzi.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Data-Hunter-iOS_juzi.txt"; sourceTree = "<group>"; };
 		068EB158177952F000A34F9A /* DHUserModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DHUserModel.h; sourceTree = "<group>"; };
 		068EB159177952F000A34F9A /* DHUserModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DHUserModel.m; sourceTree = "<group>"; };
@@ -194,6 +210,14 @@
 			isa = PBXGroup;
 			children = (
 				068EB15617794FCD00A34F9A /* Data-Hunter-iOS_juzi.txt */,
+				063A67DC177AB0DE00C57DD7 /* slots_1.png */,
+				063A67DB177AB0DE00C57DD7 /* slots_2.png */,
+				063A67DE177AB0DE00C57DD7 /* slots_3.png */,
+				063A67DD177AB0DE00C57DD7 /* slots_4.png */,
+				063A67DF177AB0DE00C57DD7 /* slots_5.png */,
+				063A67DA177AB0DE00C57DD7 /* slots_6.png */,
+				063A67E6177AE50800C57DD7 /* push.mp3 */,
+				063A67E7177AE50800C57DD7 /* win.mp3 */,
 			);
 			name = Resource;
 			sourceTree = "<group>";
@@ -307,6 +331,14 @@
 				06C5CF151778684100E217CD /* DHEndUserVoiceRecordViewController.xib in Resources */,
 				06C5CF1A17786BD900E217CD /* DHMiniGameSlotsViewController.xib in Resources */,
 				068EB15717794FCD00A34F9A /* Data-Hunter-iOS_juzi.txt in Resources */,
+				063A67E0177AB0DE00C57DD7 /* slots_6.png in Resources */,
+				063A67E1177AB0DE00C57DD7 /* slots_2.png in Resources */,
+				063A67E2177AB0DE00C57DD7 /* slots_1.png in Resources */,
+				063A67E3177AB0DE00C57DD7 /* slots_4.png in Resources */,
+				063A67E4177AB0DE00C57DD7 /* slots_3.png in Resources */,
+				063A67E5177AB0DE00C57DD7 /* slots_5.png in Resources */,
+				063A67E8177AE50800C57DD7 /* push.mp3 in Resources */,
+				063A67E9177AE50800C57DD7 /* win.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

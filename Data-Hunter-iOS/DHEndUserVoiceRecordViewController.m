@@ -7,16 +7,22 @@
 //
 
 #import "DHEndUserVoiceRecordViewController.h"
+#import "DHConfig.h"
 #import "DHUserModel.h"
 #import "DHTextModel.h"
 #import "DHVoiceModel.h"
+#import "DHMiniGameSlotsViewController.h"
+
+
+#define kDHEndUserVoiceRecordAlertFinishRecording   (0)
+#define kDHEndUserVoiceRecordAlertGotoMiniGame      (1)
 
 
 @interface DHEndUserVoiceRecordViewController ()
 
-@property (nonatomic, readwrite, strong) DHTextModel* currentTextModel;
-@property (nonatomic, readwrite, strong) AVAudioRecorder* voiceRecorder;
-@property (nonatomic, readwrite, strong) AVAudioPlayer* voicePlayer;
+@property (nonatomic, strong) DHTextModel* currentTextModel;
+@property (nonatomic, strong) AVAudioRecorder* voiceRecorder;
+@property (nonatomic, strong) AVAudioPlayer* voicePlayer;
 
 @end
 
@@ -134,10 +140,21 @@
         NSInteger numerator = [DHUserModel currentUserModel].ownerVoiceModels.count;
         NSInteger denominator = [DHTextModel allObject].count;
         if (numerator < denominator) {
-            DHEndUserVoiceRecordViewController* nextEndUserVoiceRecordVC = [[DHEndUserVoiceRecordViewController alloc] initWithNibName:@"DHEndUserVoiceRecordViewController" bundle:nil];
-            UIViewController* rootVC = self.navigationController.viewControllers[0];
-            [self.navigationController setViewControllers:@[rootVC, nextEndUserVoiceRecordVC]
-                                                 animated:YES];
+            if (numerator % kDHHowManyProgressBeforeMiniGame == 0) {
+                UIAlertView* alert = [[UIAlertView alloc] initWithTitle:nil
+                                                                message:@"Play a game to take a rest?"
+                                                               delegate:self
+                                                      cancelButtonTitle:@"Yes"
+                                                      otherButtonTitles:@"No", nil];
+                alert.tag = kDHEndUserVoiceRecordAlertGotoMiniGame;
+                [alert show];
+            }
+            else {
+                DHEndUserVoiceRecordViewController* nextEndUserVoiceRecordVC = [[DHEndUserVoiceRecordViewController alloc] initWithNibName:@"DHEndUserVoiceRecordViewController" bundle:nil];
+                UIViewController* rootVC = self.navigationController.viewControllers[0];
+                [self.navigationController setViewControllers:@[rootVC, nextEndUserVoiceRecordVC]
+                                                     animated:YES];
+            }
         }
         else {
             UIAlertView* alert = [[UIAlertView alloc] initWithTitle:@"Warning"
@@ -145,6 +162,7 @@
                                                            delegate:self
                                                   cancelButtonTitle:@"OK"
                                                   otherButtonTitles:nil];
+            alert.tag = kDHEndUserVoiceRecordAlertFinishRecording;
             [alert show];
             
             [self.progressBar setProgress:(float)numerator / denominator];
@@ -157,11 +175,31 @@
 #pragma mark - UIAlertViewDelegate
 
 - (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
-    // 如果录制完所有语言则跳回登陆界面
-    NSInteger numerator = [DHUserModel currentUserModel].ownerVoiceModels.count;
-    NSInteger denominator = [DHTextModel allObject].count;
-    if (numerator >= denominator)
-        [self.navigationController popToRootViewControllerAnimated:YES];
+    switch (alertView.tag) {
+        case kDHEndUserVoiceRecordAlertGotoMiniGame: {
+            if (buttonIndex == 0) { // Yes
+                DHMiniGameSlotsViewController* miniGameSlotsVC = [[DHMiniGameSlotsViewController alloc] initWithNibName:@"DHMiniGameSlotsViewController" bundle:nil];
+                UIViewController* rootVC = self.navigationController.viewControllers[0];
+                [self.navigationController setViewControllers:@[rootVC, miniGameSlotsVC]
+                                                     animated:YES];
+            }
+            else { // No
+                DHEndUserVoiceRecordViewController* nextEndUserVoiceRecordVC = [[DHEndUserVoiceRecordViewController alloc] initWithNibName:@"DHEndUserVoiceRecordViewController" bundle:nil];
+                UIViewController* rootVC = self.navigationController.viewControllers[0];
+                [self.navigationController setViewControllers:@[rootVC, nextEndUserVoiceRecordVC]
+                                                     animated:YES];
+            }
+            break;
+        }
+        case kDHEndUserVoiceRecordAlertFinishRecording: {
+            // 如果录制完所有语言则跳回登陆界面
+            NSInteger numerator = [DHUserModel currentUserModel].ownerVoiceModels.count;
+            NSInteger denominator = [DHTextModel allObject].count;
+            if (numerator >= denominator)
+                [self.navigationController popToRootViewControllerAnimated:YES];
+            break;
+        }
+    }
 }
 
 
